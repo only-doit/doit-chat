@@ -1,7 +1,9 @@
 import Vue from 'vue'
 import App from './App.vue'
-import './registerServiceWorker'
+import '@/registerServiceWorker'
 import router from './router'
+
+import '@/assets/tailwindcss.scss'
 
 Vue.config.productionTip = false
 
