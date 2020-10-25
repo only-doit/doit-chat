@@ -18,7 +18,7 @@ export default {
         },
         {
           date: new Date(),
-          avatar: 'https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=144&h=144',
+          avatar: 'https://images.unsplash.com/photo-1590031905470-a1a1feacbb0b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=144&h=144',
           messages: [
             { text: 'Your error message says permission denied, npm global installs must be given root privileges.' }
           ],
@@ -28,15 +28,15 @@ export default {
           date: new Date(),
           avatar: 'https://images.unsplash.com/photo-1549078642-b2ba4bda0cdb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=144&h=144',
           messages: [
-            { text: '@gterras Command was run with root privileges. I\'m sure about that.' },
+            { text: 'Command was run with root privileges. I\'m sure about that.' },
             { text: 'I\'ve update the description so it\'s more obviously now' },
-            { text: '@gterras FYI https://askubuntu.com/a/700266/510172' },
+            { text: 'FYI https://askubuntu.com/a/700266/510172' },
             { text: 'Check the line above (it ends with a # so, I\'m running it as root ) <pre># npm install -g @vue/devtools</pre>' }
           ]
         },
         {
           date: new Date(),
-          avatar: 'https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=144&h=144',
+          avatar: 'https://images.unsplash.com/photo-1590031905470-a1a1feacbb0b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=144&h=144',
           messages: [
             { text: 'Any updates on this issue? I\'m getting the same error when trying to install devtools. Thanks' }
           ],
@@ -46,15 +46,15 @@ export default {
           date: new Date(),
           avatar: 'https://images.unsplash.com/photo-1549078642-b2ba4bda0cdb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=144&h=144',
           messages: [
-            { text: 'Thanks for your message @fabioguarrasi. I thought I\'m alone with this issue. Please, 👍 the issue to support it :)' }
+            { text: 'Thanks for your message David. I thought I\'m alone with this issue. Please, 👍 the issue to support it :)' }
           ]
         },
         {
           date: new Date(),
-          avatar: 'https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=144&h=144',
+          avatar: 'https://images.unsplash.com/photo-1590031905470-a1a1feacbb0b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=144&h=144',
           messages: [
-            { text: '@probil are you using sudo?' },
-            { text: 'run this command sudo chown -R `whoami` /Users/{{your_user_profile}}/.npm-global/ then install the package globally without using sudo' }
+            { text: 'Are you using sudo?' },
+            { text: 'Run this command sudo chown -R `whoami` /Users/{{your_user_profile}}/.npm-global/ then install the package globally without using sudo' }
           ],
           sent: true
         },
@@ -68,7 +68,7 @@ export default {
         },
         {
           date: new Date(),
-          avatar: 'https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=144&h=144',
+          avatar: 'https://images.unsplash.com/photo-1590031905470-a1a1feacbb0b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=144&h=144',
           messages: [
             { text: 'yes, I have a mac. I never had issues with root permission as well, but this helped me to solve the problem' }
           ],
@@ -93,7 +93,7 @@ export default {
   <div id="app" class="flex h-screen font-sans">
     <div class="w-1/5 bg-gray-200 px-4 pt-6">
       <div class="flex items-center space-x-4">
-        <img class="w-12 h-12 rounded-full" src="https://images.unsplash.com/photo-1584999734482-0361aecad844?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=144&h=144" alt="My profile">
+        <img class="w-12 h-12 rounded-full" src="https://images.unsplash.com/photo-1590031905470-a1a1feacbb0b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=144&h=144" alt="My profile">
         <div class="flex flex-1 flex-col leading-tight">
           <span class="text-lg font-semibold text-blue-600">David Henrique</span>
           <span class="text-xs text-gray-600">Senior Develop</span>
@@ -171,7 +171,7 @@ export default {
           </div>
         </div>
         <div class="flex items-center space-x-4">
-          <img class="w-10 h-10 rounded-full" src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=144&h=144" alt="My profile">
+          <img class="w-10 h-10 rounded-full" src="https://images.unsplash.com/photo-1590031905470-a1a1feacbb0b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=144&h=144" alt="My profile">
           <div class="flex flex-1 flex-col leading-tight">
             <span class="text-sm font-semibold text-blue-600">Eric Peterson</span>
             <span class="text-xs text-gray-600">Firs of all meet with the compray CEO and BDA.</span>
