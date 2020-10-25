@@ -1,5 +1,7 @@
 # doit-chat
 
+[Demo](http://doit-chat.herokuapp.com/)
+
 ![image](https://user-images.githubusercontent.com/1490347/97096885-0bb88d80-1649-11eb-9eaa-fa5d56f5ae51.png)
 
 
