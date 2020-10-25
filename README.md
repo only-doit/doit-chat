@@ -1,6 +1,7 @@
 # doit-chat
 
-![image](https://user-images.githubusercontent.com/1490347/97096860-8cc35500-1648-11eb-9234-9289651e4eb0.png)
+![image](https://user-images.githubusercontent.com/1490347/97096885-0bb88d80-1649-11eb-9eaa-fa5d56f5ae51.png)
+
 
 ## Project setup
 ```
