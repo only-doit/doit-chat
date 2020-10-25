@@ -127,7 +127,7 @@ export default {
 
 <template>
   <div id="app" class="flex h-screen font-sans">
-    <div class="w-1/5 bg-gray-200 px-4 pt-6">
+    <div class="hidden sm:block w-1/5 bg-gray-200 px-4 pt-6">
       <div class="flex items-center space-x-4">
         <img class="w-12 h-12 rounded-full" src="https://images.unsplash.com/photo-1590031905470-a1a1feacbb0b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=144&h=144" alt="My profile">
         <div class="flex flex-1 flex-col leading-tight">
@@ -215,10 +215,10 @@ export default {
         </div>
       </div>
     </div>
-    <div class="flex-1 p-6 justify-between flex flex-col">
-      <div class="flex items-center justify-between py-3 border-b-2 border-gray-200">
+    <div class="flex-1 p:2 sm:p-6 justify-between flex flex-col">
+      <div class="flex flex-col sm:flex-row items-center justify-between py-3 border-b-2 border-gray-200">
         <div class="flex items-center space-x-4">
-          <img class="w-16 h-16 rounded-full" src="https://images.unsplash.com/photo-1549078642-b2ba4bda0cdb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=144&h=144" alt="">
+          <img class="w-10 sm:w-16 h-10 sm:h-16 rounded-full" src="https://images.unsplash.com/photo-1549078642-b2ba4bda0cdb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=144&h=144" alt="">
           <div class="flex flex-col leading-tight">
             <div class="text-2xl mt-1 flex items-center">
               <span class="text-gray-700 mr-3">Anderson Vanhron</span>
@@ -257,7 +257,7 @@ export default {
           :sent="sent"
         />
       </div>
-      <div class="border-t-2 border-gray-200 px-4 pt-4">
+      <div class="border-t-2 border-gray-200 px-4 pt-4 mb-2 sm:mb-0">
         <div class="relative flex">
           <span class="absolute inset-y-0 flex items-center">
             <button type="button" class="block inline-flex items-center justify-center rounded-full h-12 w-12 transition duration-500 ease-in-out text-gray-500 hover:bg-gray-300 focus:outline-none">
@@ -267,7 +267,7 @@ export default {
             </button>
           </span>
           <input v-model="message" type="text" class="w-full focus:outline-none focus:placeholder-gray-400 text-gray-600 placeholder-gray-600 pl-12 bg-gray-200 rounded-full py-3" placeholder="Write Something" @keypress.enter="sent">
-          <div class="absolute right-0 flex items-center inset-y-0 ">
+          <div class="absolute right-0 items-center inset-y-0 hidden sm:flex">
             <button type="button" class="block inline-flex items-center justify-center rounded-full h-10 w-10 transition duration-500 ease-in-out text-gray-500 hover:bg-gray-300 focus:outline-none">
               <svg class="h-6 w-6 text-gray-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13" />
@@ -293,7 +293,7 @@ export default {
         </div>
       </div>
     </div>
-    <div class="w-1/5 p-3 bg-gray-200">
+    <div class="hidden sm:block w-1/5 p-3 bg-gray-200">
       <div class="relative mt-6 flex">
         <span class="absolute inset-y-0 pl-4 flex items-center">
           <svg class="h-4 w-4 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
