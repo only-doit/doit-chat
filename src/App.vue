@@ -1,6 +1,8 @@
 <script>
 import DChatMessage from '@/components/chat/ChatMessage'
 
+const avatar = 'https://images.unsplash.com/photo-1590031905470-a1a1feacbb0b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=144&h=144'
+
 export default {
   name: 'App',
 
@@ -8,6 +10,7 @@ export default {
 
   data () {
     return {
+      message: '',
       chat: [
         {
           date: new Date(),
@@ -84,6 +87,39 @@ export default {
           ]
         }
       ]
+    }
+  },
+
+  mounted () {
+    this.lastMessages()
+  },
+
+  methods: {
+    sent () {
+      const chat = this.chat[this.chat.length - 1]
+
+      // mock
+      if (chat.avatar !== avatar) {
+        this.chat.push({
+          avatar: avatar,
+          messages: [{
+            text: this.message
+          }],
+          sent: true
+        })
+      } else {
+        chat.messages.push({ text: this.message })
+      }
+
+      this.message = null
+
+      this.$nextTick(() => {
+        this.lastMessages()
+      })
+    },
+    lastMessages () {
+      const container = this.$refs.messages
+      container.scrollTop = container.scrollHeight
     }
   }
 }
@@ -213,7 +249,7 @@ export default {
           </button>
         </div>
       </div>
-      <div class="flex flex-col space-y-4 p-3 overflow-y-auto scrollbar-thumb-blue scrollbar-thumb-rounded scrollbar-track-blue-lighter scrollbar-w-2 scrolling-touch">
+      <div ref="messages" class="flex flex-col space-y-4 p-3 overflow-y-auto scrollbar-thumb-blue scrollbar-thumb-rounded scrollbar-track-blue-lighter scrollbar-w-2 scrolling-touch">
         <d-chat-message
           v-for="({ messages, avatar, sent }, i) of chat" :key="i"
           :avatar="avatar"
@@ -230,7 +266,7 @@ export default {
               </svg>
             </button>
           </span>
-          <input type="text" class="w-full focus:outline-none focus:placeholder-gray-400 placeholder-gray-600 pl-12 bg-gray-200 rounded-full py-3" placeholder="Write Something">
+          <input v-model="message" type="text" class="w-full focus:outline-none focus:placeholder-gray-400 text-gray-600 placeholder-gray-600 pl-12 bg-gray-200 rounded-full py-3" placeholder="Write Something" @keypress.enter="sent">
           <div class="absolute right-0 flex items-center inset-y-0 ">
             <button type="button" class="block inline-flex items-center justify-center rounded-full h-10 w-10 transition duration-500 ease-in-out text-gray-500 hover:bg-gray-300 focus:outline-none">
               <svg class="h-6 w-6 text-gray-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -248,7 +284,7 @@ export default {
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </button>
-            <button type="button" class="block inline-flex items-center justify-center rounded-full h-12 w-12 transition duration-500 ease-in-out text-white bg-blue-500 hover:bg-blue-400 focus:outline-none">
+            <button type="button" class="block inline-flex items-center justify-center rounded-full h-12 w-12 transition duration-500 ease-in-out text-white bg-blue-500 hover:bg-blue-400 focus:outline-none" @click="sent">
               <svg class="h-6 w-6 transform rotate-90" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                 <path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z" />
               </svg>
