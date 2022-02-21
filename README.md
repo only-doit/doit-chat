@@ -1,4 +1,4 @@
-# doit-chat
+# chat-tailwindcss
 
 Note: This project was built just to test the knowledge of tailwindcss. If you are interested in using the design in yours projects, please contact [TUSHAR KANJARIYA](https://www.uplabs.com/posts/chat-ui-design-0b930711-4cfd-4ab4-b686-6e7785624b16)
 
